@@ -1,0 +1,218 @@
+/* CSS for basic styling (optional) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(63, 83, 156);
+    padding: 0px;
+    margin: 0px;
+    color: #eaf7ff;
+    
+}
+#kozepre{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+
+}
+.data-container-export{
+
+    padding: 5px;
+    width: 300px;
+    
+}
+
+#konti{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    padding: 10px;
+    margin-top: 0px;
+
+}
+.login-container{
+  
+  
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: center;  
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.586);
+    border-right: solid 5px rgba(0, 0, 0, 0.586);
+    color: black;
+}
+
+.exportbutton{
+
+    
+    background-color: #2878a7 !important;
+    color: white !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.exportbutton:hover{
+
+    
+    background-color: #3290c6 !important;
+}
+.gomb{
+    background-color: #2878a7 !important;
+    
+}
+
+.gomb:hover{
+
+    background-color: #3290c6 !important;
+
+}
+
+.data-container{
+  
+  
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;  
+    color: black;
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.586);
+    border-right: solid 5px rgba(0, 0, 0, 0.586);
+
+}
+
+.data {
+    max-width: 500px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(63, 83, 156);
+    border-color: 3px solid blue;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #2878a7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2878a7;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.ok{
+    color: rgb(0, 255, 251);
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+.homegomb{
+
+        margin-top: 40px;
+        padding-top: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.829);
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        background-color: rgba(148, 148, 148, 0.337);
+}
+
+.homegomb:hover{
+
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255);
+}
+
+#name{
+    color: #8dd5ff;
+}
+
+#datum{
+    font-size: 13px;
+}
+
+p{
+    padding:0px;
+    margin: 5px;
+    
+}
+.message {
+    text-align: left;
+    border-bottom: 1.5px solid #9b9b9b;
+    padding: 1px;
+    margin: 5px;
+    background-color: rgb(13, 33, 107);
+    color: rgb(245, 245, 245);
+    border-radius: 10px;
+    
+}
+.message:last-child {
+    border-bottom: none;
+}
+
+.uzenet{
+
+    background-color: rgb(46, 57, 125);
+    padding: 5px;
+    margin-left: 0px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px ;
+    
+
+}
