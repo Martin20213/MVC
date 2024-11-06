@@ -3,6 +3,8 @@
 class Controller
 {
 
+
+
     public function view($name)
     {
 

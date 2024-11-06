@@ -125,36 +125,14 @@ Trait Model
         return $this->query($query, $data);
     }
 
-#JogId a jogosultsag eldontesehez
-
-    public function getJogId($felhasznalo_id)
-{
-    // Query to get the jog_id for the specific user
-    $query = "SELECT jog_id FROM $this->table WHERE Felhasznalo_id = :felhasznalo_id LIMIT 1";
-
-    // Execute the query
-    $result = $this->query($query, ['felhasznalo_id' => $felhasznalo_id]);
-
-    // Return jog_id if found, otherwise return null
-    return $result ? $result[0]->jog_id : null;
-}
-
-#Uzenofalhoz minden uzenet selectje
-public function getAllMessages()
-{
-    // Define the query to select all messages from the uzenofal table
-    $query = "SELECT Uzenet FROM uzenofal"; // Adjust table and field names as necessary
-    
-    // Execute the query
-    $results = $this->query($query);
-    
-    // Check if results are returned and return them
-    if ($results) {
-        return $results; // This will be an array of messages
+    public function getUser($username, $password)
+    {
+        // Kérdezd le a felhasználót az adatbázisból
+        // A jelszavakat érdemes titkosítani, például bcrypt-tel
+        $stmt = $this->db->prepare("SELECT * FROM users WHERE username = :username AND password = :password");
+        $stmt->execute(['username' => $username, 'password' => md5($password)]); // Itt md5-t használunk, de érdemes bcrypt-re váltani
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
-    
-    return []; // Return an empty array if no messages are found
-}
 
 
     

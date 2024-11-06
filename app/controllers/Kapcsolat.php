@@ -3,13 +3,20 @@
 class Kapcsolat extends Controller
 {
 
+    
+
     public function index()
     {
-        echo "Kapcsolat kontroller";
+        $model = new Kapcsolat();
+
 
         $this->view('kapcsolat');
+
+
     }
 
 
+
+    
 }
 
